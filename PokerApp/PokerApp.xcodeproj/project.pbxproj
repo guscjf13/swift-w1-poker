@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		C7D4FC1225A59B640017F616 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D4FC1125A59B640017F616 /* main.swift */; };
+		C7D4FC1F25A5AAEC0017F616 /* Card_Generate_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D4FC1E25A5AAEC0017F616 /* Card_Generate_Test.swift */; };
+		C7D4FC2425A5AB0E0017F616 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D4FC1125A59B640017F616 /* main.swift */; };
+		C7D4FC2925A5AE890017F616 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D4FC2825A5AE890017F616 /* Card.swift */; };
+		C7D4FC2A25A5AE890017F616 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D4FC2825A5AE890017F616 /* Card.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +29,21 @@
 /* Begin PBXFileReference section */
 		C7D4FC0E25A59B640017F616 /* PokerApp */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PokerApp; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7D4FC1125A59B640017F616 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		C7D4FC1C25A5AAEC0017F616 /* Card_Generate_Test.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Card_Generate_Test.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7D4FC1E25A5AAEC0017F616 /* Card_Generate_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card_Generate_Test.swift; sourceTree = "<group>"; };
+		C7D4FC2025A5AAEC0017F616 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7D4FC2825A5AE890017F616 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		C7D4FC0B25A59B640017F616 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7D4FC1925A5AAEC0017F616 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				C7D4FC1025A59B640017F616 /* PokerApp */,
+				C7D4FC1D25A5AAEC0017F616 /* Card_Generate_Test */,
 				C7D4FC0F25A59B640017F616 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				C7D4FC0E25A59B640017F616 /* PokerApp */,
+				C7D4FC1C25A5AAEC0017F616 /* Card_Generate_Test.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,8 +75,18 @@
 			isa = PBXGroup;
 			children = (
 				C7D4FC1125A59B640017F616 /* main.swift */,
+				C7D4FC2825A5AE890017F616 /* Card.swift */,
 			);
 			path = PokerApp;
+			sourceTree = "<group>";
+		};
+		C7D4FC1D25A5AAEC0017F616 /* Card_Generate_Test */ = {
+			isa = PBXGroup;
+			children = (
+				C7D4FC1E25A5AAEC0017F616 /* Card_Generate_Test.swift */,
+				C7D4FC2025A5AAEC0017F616 /* Info.plist */,
+			);
+			path = Card_Generate_Test;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +109,23 @@
 			productReference = C7D4FC0E25A59B640017F616 /* PokerApp */;
 			productType = "com.apple.product-type.tool";
 		};
+		C7D4FC1B25A5AAEC0017F616 /* Card_Generate_Test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7D4FC2125A5AAEC0017F616 /* Build configuration list for PBXNativeTarget "Card_Generate_Test" */;
+			buildPhases = (
+				C7D4FC1825A5AAEC0017F616 /* Sources */,
+				C7D4FC1925A5AAEC0017F616 /* Frameworks */,
+				C7D4FC1A25A5AAEC0017F616 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Card_Generate_Test;
+			productName = Card_Generate_Test;
+			productReference = C7D4FC1C25A5AAEC0017F616 /* Card_Generate_Test.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -93,6 +137,9 @@
 				ORGANIZATIONNAME = "이준형";
 				TargetAttributes = {
 					C7D4FC0D25A59B640017F616 = {
+						CreatedOnToolsVersion = 11.7;
+					};
+					C7D4FC1B25A5AAEC0017F616 = {
 						CreatedOnToolsVersion = 11.7;
 					};
 				};
@@ -111,9 +158,20 @@
 			projectRoot = "";
 			targets = (
 				C7D4FC0D25A59B640017F616 /* PokerApp */,
+				C7D4FC1B25A5AAEC0017F616 /* Card_Generate_Test */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C7D4FC1A25A5AAEC0017F616 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C7D4FC0A25A59B640017F616 /* Sources */ = {
@@ -121,6 +179,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7D4FC1225A59B640017F616 /* main.swift in Sources */,
+				C7D4FC2925A5AE890017F616 /* Card.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7D4FC1825A5AAEC0017F616 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7D4FC2425A5AB0E0017F616 /* main.swift in Sources */,
+				C7D4FC2A25A5AE890017F616 /* Card.swift in Sources */,
+				C7D4FC1F25A5AAEC0017F616 /* Card_Generate_Test.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +331,42 @@
 			};
 			name = Release;
 		};
+		C7D4FC2225A5AAEC0017F616 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = SFNDY59DA9;
+				INFOPLIST_FILE = Card_Generate_Test/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kakaocorp.Card-Generate-Test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		C7D4FC2325A5AAEC0017F616 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = SFNDY59DA9;
+				INFOPLIST_FILE = Card_Generate_Test/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kakaocorp.Card-Generate-Test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -279,6 +384,15 @@
 			buildConfigurations = (
 				C7D4FC1625A59B640017F616 /* Debug */,
 				C7D4FC1725A59B640017F616 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7D4FC2125A5AAEC0017F616 /* Build configuration list for PBXNativeTarget "Card_Generate_Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7D4FC2225A5AAEC0017F616 /* Debug */,
+				C7D4FC2325A5AAEC0017F616 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
