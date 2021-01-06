@@ -12,9 +12,7 @@ class Card : CustomStringConvertible {
     public enum Suit : String {
         case Hearts = "♥️", Spades = "♠️", Diamonds = "💎", Clubs = "♣️"
     }
-    public enum Rank : Int {
-        case A = 1, Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten, J, Q, K
-    }
+
     enum ValidationError: Error {
         case wrongRankRange
     }
