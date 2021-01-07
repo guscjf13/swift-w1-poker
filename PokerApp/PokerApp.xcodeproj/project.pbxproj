@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		438D2A8925A5585800A71A17 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438D2A8825A5585800A71A17 /* main.swift */; };
+		438D2AEF25A6F84400A71A17 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438D2AEE25A6F84400A71A17 /* Card.swift */; };
+		438D2AF125A6F85500A71A17 /* CardDeck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438D2AF025A6F85500A71A17 /* CardDeck.swift */; };
+		438D2AF925A6FA0F00A71A17 /* CardTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438D2AF825A6FA0F00A71A17 /* CardTest.swift */; };
+		438D2B0525A6FA5000A71A17 /* CardDeckTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438D2B0425A6FA5000A71A17 /* CardDeckTest.swift */; };
+		438D2B0A25A6FA5D00A71A17 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438D2AEE25A6F84400A71A17 /* Card.swift */; };
+		438D2B0B25A6FA5D00A71A17 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438D2AEE25A6F84400A71A17 /* Card.swift */; };
+		438D2B0C25A6FA6000A71A17 /* CardDeck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438D2AF025A6F85500A71A17 /* CardDeck.swift */; };
+		438D2B0D25A6FA6000A71A17 /* CardDeck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438D2AF025A6F85500A71A17 /* CardDeck.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +33,32 @@
 /* Begin PBXFileReference section */
 		438D2A8525A5585800A71A17 /* PokerApp */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PokerApp; sourceTree = BUILT_PRODUCTS_DIR; };
 		438D2A8825A5585800A71A17 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		438D2AEE25A6F84400A71A17 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		438D2AF025A6F85500A71A17 /* CardDeck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDeck.swift; sourceTree = "<group>"; };
+		438D2AF625A6FA0F00A71A17 /* CardTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CardTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		438D2AF825A6FA0F00A71A17 /* CardTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTest.swift; sourceTree = "<group>"; };
+		438D2AFA25A6FA0F00A71A17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		438D2B0225A6FA5000A71A17 /* CardDeckTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CardDeckTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		438D2B0425A6FA5000A71A17 /* CardDeckTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDeckTest.swift; sourceTree = "<group>"; };
+		438D2B0625A6FA5000A71A17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		438D2A8225A5585800A71A17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		438D2AF325A6FA0F00A71A17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		438D2AFF25A6FA5000A71A17 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +72,8 @@
 			isa = PBXGroup;
 			children = (
 				438D2A8725A5585800A71A17 /* PokerApp */,
+				438D2AF725A6FA0F00A71A17 /* CardTest */,
+				438D2B0325A6FA5000A71A17 /* CardDeckTest */,
 				438D2A8625A5585800A71A17 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +82,8 @@
 			isa = PBXGroup;
 			children = (
 				438D2A8525A5585800A71A17 /* PokerApp */,
+				438D2AF625A6FA0F00A71A17 /* CardTest.xctest */,
+				438D2B0225A6FA5000A71A17 /* CardDeckTest.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,8 +92,28 @@
 			isa = PBXGroup;
 			children = (
 				438D2A8825A5585800A71A17 /* main.swift */,
+				438D2AEE25A6F84400A71A17 /* Card.swift */,
+				438D2AF025A6F85500A71A17 /* CardDeck.swift */,
 			);
 			path = PokerApp;
+			sourceTree = "<group>";
+		};
+		438D2AF725A6FA0F00A71A17 /* CardTest */ = {
+			isa = PBXGroup;
+			children = (
+				438D2AF825A6FA0F00A71A17 /* CardTest.swift */,
+				438D2AFA25A6FA0F00A71A17 /* Info.plist */,
+			);
+			path = CardTest;
+			sourceTree = "<group>";
+		};
+		438D2B0325A6FA5000A71A17 /* CardDeckTest */ = {
+			isa = PBXGroup;
+			children = (
+				438D2B0425A6FA5000A71A17 /* CardDeckTest.swift */,
+				438D2B0625A6FA5000A71A17 /* Info.plist */,
+			);
+			path = CardDeckTest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +136,40 @@
 			productReference = 438D2A8525A5585800A71A17 /* PokerApp */;
 			productType = "com.apple.product-type.tool";
 		};
+		438D2AF525A6FA0F00A71A17 /* CardTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 438D2AFB25A6FA0F00A71A17 /* Build configuration list for PBXNativeTarget "CardTest" */;
+			buildPhases = (
+				438D2AF225A6FA0F00A71A17 /* Sources */,
+				438D2AF325A6FA0F00A71A17 /* Frameworks */,
+				438D2AF425A6FA0F00A71A17 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CardTest;
+			productName = CardTest;
+			productReference = 438D2AF625A6FA0F00A71A17 /* CardTest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		438D2B0125A6FA5000A71A17 /* CardDeckTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 438D2B0725A6FA5000A71A17 /* Build configuration list for PBXNativeTarget "CardDeckTest" */;
+			buildPhases = (
+				438D2AFE25A6FA5000A71A17 /* Sources */,
+				438D2AFF25A6FA5000A71A17 /* Frameworks */,
+				438D2B0025A6FA5000A71A17 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CardDeckTest;
+			productName = CardDeckTest;
+			productReference = 438D2B0225A6FA5000A71A17 /* CardDeckTest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -93,6 +181,12 @@
 				ORGANIZATIONNAME = com.kakaocorp;
 				TargetAttributes = {
 					438D2A8425A5585800A71A17 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					438D2AF525A6FA0F00A71A17 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					438D2B0125A6FA5000A71A17 = {
 						CreatedOnToolsVersion = 11.5;
 					};
 				};
@@ -111,16 +205,57 @@
 			projectRoot = "";
 			targets = (
 				438D2A8425A5585800A71A17 /* PokerApp */,
+				438D2AF525A6FA0F00A71A17 /* CardTest */,
+				438D2B0125A6FA5000A71A17 /* CardDeckTest */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		438D2AF425A6FA0F00A71A17 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		438D2B0025A6FA5000A71A17 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		438D2A8125A5585800A71A17 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				438D2AF125A6F85500A71A17 /* CardDeck.swift in Sources */,
 				438D2A8925A5585800A71A17 /* main.swift in Sources */,
+				438D2AEF25A6F84400A71A17 /* Card.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		438D2AF225A6FA0F00A71A17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				438D2B0C25A6FA6000A71A17 /* CardDeck.swift in Sources */,
+				438D2AF925A6FA0F00A71A17 /* CardTest.swift in Sources */,
+				438D2B0A25A6FA5D00A71A17 /* Card.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		438D2AFE25A6FA5000A71A17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				438D2B0D25A6FA6000A71A17 /* CardDeck.swift in Sources */,
+				438D2B0525A6FA5000A71A17 /* CardDeckTest.swift in Sources */,
+				438D2B0B25A6FA5D00A71A17 /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +393,74 @@
 			};
 			name = Release;
 		};
+		438D2AFC25A6FA0F00A71A17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = CardTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = herb.salt.CardTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		438D2AFD25A6FA0F00A71A17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = CardTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = herb.salt.CardTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		438D2B0825A6FA5000A71A17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = CardDeckTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = herb.salt.CardDeckTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		438D2B0925A6FA5000A71A17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = CardDeckTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = herb.salt.CardDeckTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -275,6 +478,24 @@
 			buildConfigurations = (
 				438D2A8D25A5585800A71A17 /* Debug */,
 				438D2A8E25A5585800A71A17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		438D2AFB25A6FA0F00A71A17 /* Build configuration list for PBXNativeTarget "CardTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				438D2AFC25A6FA0F00A71A17 /* Debug */,
+				438D2AFD25A6FA0F00A71A17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		438D2B0725A6FA5000A71A17 /* Build configuration list for PBXNativeTarget "CardDeckTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				438D2B0825A6FA5000A71A17 /* Debug */,
+				438D2B0925A6FA5000A71A17 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
