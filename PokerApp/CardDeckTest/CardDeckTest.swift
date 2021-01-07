@@ -22,7 +22,6 @@ class CardDeckTest: XCTestCase {
         
         var deck = CardDeck()
         var cards = [Card]()
-        var check = true
         
         for index in 1...13 {
             cards.append(Card(shape: .spade, num: index))
@@ -32,21 +31,11 @@ class CardDeckTest: XCTestCase {
         }
         cards.append(Card(shape: .joker, num: 0))
 
-        if deck.count() == cards.count {
+        XCTAssertEqual(deck.count(), cards.count)
             
-            for index in 0..<deck.count() {
-                if !(deck.cards[index] == cards[index]) {
-                    check = false
-                    break
-                }
-            }
-            
+        for index in 0..<deck.count() {
+            XCTAssertTrue(deck.cards[index] == cards[index])
         }
-        else {
-            check = false
-        }
-        
-        XCTAssertTrue(check)
         
     }
     
@@ -57,28 +46,20 @@ class CardDeckTest: XCTestCase {
         deckTest.shuffle()
         
         var boolCheck = [Bool](repeating: false, count: deckReal.count())
-        var check = true
         
-        if deckTest.count() == deckReal.count() {
-            for index1 in 0..<deckTest.count() {
-                for index2 in 0..<deckReal.count() {
-                    if deckTest.cards[index1] == deckReal.cards[index2] {
-                        boolCheck[index2] = true
-                    }
+        XCTAssertEqual(deckReal.count(), deckTest.count())
+        
+        for index1 in 0..<deckTest.count() {
+            for index2 in 0..<deckReal.count() {
+                if deckTest.cards[index1] == deckReal.cards[index2] {
+                    boolCheck[index2] = true
                 }
             }
         }
-        else {
-            check = false
-        }
         
         for index in 0..<boolCheck.count {
-            if(!boolCheck[index]) {
-                check = false
-            }
+            XCTAssertTrue(boolCheck[index])
         }
-        
-        XCTAssertTrue(check)
         
     }
     
