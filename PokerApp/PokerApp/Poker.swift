@@ -20,16 +20,11 @@ class Poker {
         
     }
     
-    func printCard() {
-        
-        for player in players {
-            player.printCard()
-        }
-        dealer.printCard()
+    func calculateScore() {
         
     }
     
-    func testSetting() -> Bool {
+    func gameEnable() -> Bool {
         
         return players.count < 5 ||  (cardNum == 5 || cardNum == 7) || dealer.deck.count() >= (players.count+1) * cardNum
         
@@ -37,9 +32,13 @@ class Poker {
     
     func gameStart() {
         
-        if testSetting() {
+        if gameEnable() {
+            
             self.splitCard()
-            self.printCard()
+            Print.printParticipantCards(poker: self)
+            
+            self.calculateScore()
+            
         }
         
     }

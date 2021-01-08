@@ -1,5 +1,7 @@
 import Foundation
 
+var printClass = Print()
+
 var dealer = Dealer(name: "딜러")
 
 var player1 = Player(name: "참가자1")

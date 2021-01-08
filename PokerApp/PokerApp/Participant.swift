@@ -16,19 +16,6 @@ class Participant {
         
         self.cards.append(card)
         
-    }
-    
-    func printCard() {
-        
-        var str = "\(self.name) ["
-        for index in 0..<self.cards.count {
-            str.append("\(self.cards[index].getCardString()), ")
-        }
-        str.append("\(self.cards[self.cards.count-1].getCardString())]")
-        
-        print(str)
-        
-    }
-    
+    }    
     
 }

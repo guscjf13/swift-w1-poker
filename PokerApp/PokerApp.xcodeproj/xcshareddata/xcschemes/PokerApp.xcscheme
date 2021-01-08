@@ -48,6 +48,46 @@
                ReferencedContainer = "container:PokerApp.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "43F5F40125A8096800E68155"
+               BuildableName = "DealerTest.xctest"
+               BlueprintName = "DealerTest"
+               ReferencedContainer = "container:PokerApp.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "43F5F41925A8097300E68155"
+               BuildableName = "PokerTest.xctest"
+               BlueprintName = "PokerTest"
+               ReferencedContainer = "container:PokerApp.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "43F5F40D25A8096F00E68155"
+               BuildableName = "PlayerTest.xctest"
+               BlueprintName = "PlayerTest"
+               ReferencedContainer = "container:PokerApp.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "43F5F3F525A8096000E68155"
+               BuildableName = "ParticipantTest.xctest"
+               BlueprintName = "ParticipantTest"
+               ReferencedContainer = "container:PokerApp.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
