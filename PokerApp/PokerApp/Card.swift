@@ -36,6 +36,8 @@ class Card {
         var cardStr = String(self.shape.rawValue)
         
         switch self.num {
+        case 0:
+            cardStr.append("")
         case 1:
             cardStr.append("A")
         case 11:
